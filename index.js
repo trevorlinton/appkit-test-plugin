@@ -1,5 +1,7 @@
 module.exports = {
-	init:function(){},
+	init:function(appkit){
+		appkit.args.command('testing','test plugin test',{}, () => { console.log("testing"); });
+	},
 	update:function(){},
 	group:'test-plugin',
 	help:'testing plugin loader',
